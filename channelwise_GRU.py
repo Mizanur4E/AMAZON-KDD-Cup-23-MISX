@@ -1,3 +1,16 @@
+import os
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+import numpy as np
+import pandas as pd
+
+#corresponding to model
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Embedding, GRU, Dense, Concatenate, Dropout, Reshape
+from tensorflow.keras.models import Model
+from tensorflow.keras.callbacks import ModelCheckpoint
+from tensorflow.keras.utils import plot_model
+ 
  class Metesre():
         
         def __init__(self):
